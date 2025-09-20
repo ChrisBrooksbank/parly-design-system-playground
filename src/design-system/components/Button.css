@@ -1,0 +1,103 @@
+.pds-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 2px solid transparent;
+  border-radius: var(--pds-radius-subtle);
+  padding: 0.625rem 1.5rem;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.25;
+  cursor: pointer;
+  transition: background-color var(--pds-transition),
+    border-color var(--pds-transition),
+    color var(--pds-transition),
+    transform var(--pds-transition);
+  text-decoration: none;
+}
+
+.pds-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.pds-button--primary {
+  background: var(--pds-brand-blue);
+  color: white;
+}
+
+.pds-button--primary:hover:not(:disabled) {
+  background: #093869;
+  transform: translateY(-1px);
+}
+
+.pds-button--secondary {
+  background: var(--pds-brand-plum);
+  color: white;
+}
+
+.pds-button--secondary:hover:not(:disabled) {
+  background: #4a216b;
+  transform: translateY(-1px);
+}
+
+.pds-button--tertiary {
+  background: white;
+  border-color: var(--pds-brand-blue);
+  color: var(--pds-brand-blue);
+}
+
+.pds-button--tertiary:hover:not(:disabled) {
+  background: rgba(11, 72, 132, 0.1);
+}
+
+.pds-button--ghost {
+  background: transparent;
+  color: var(--pds-brand-blue);
+}
+
+.pds-button--ghost:hover:not(:disabled) {
+  background: rgba(11, 72, 132, 0.08);
+}
+
+.pds-button--small {
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+}
+
+.pds-button--icon-only {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  border-radius: var(--pds-radius-pill);
+}
+
+.pds-button__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1em;
+}
+
+.pds-button__spinner {
+  width: 1em;
+  height: 1em;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: pds-spin 0.75s linear infinite;
+}
+
+.pds-button--tertiary .pds-button__spinner,
+.pds-button--ghost .pds-button__spinner {
+  border: 2px solid rgba(11, 72, 132, 0.2);
+  border-top-color: var(--pds-brand-blue);
+}
+
+@keyframes pds-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

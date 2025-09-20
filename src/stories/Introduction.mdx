@@ -1,0 +1,24 @@
+export const meta = {
+  title: 'Intro/Welcome',
+};
+
+# Parliament design system playground
+
+This playground is a local environment for experimenting with patterns that mirror the [Parliament design system](https://designsystem.parliament.uk/).
+
+> ℹ️ The official documentation is hosted on designsystem.parliament.uk. Network restrictions in the execution environment prevented the automated setup from downloading the production stylesheets. This Storybook ships with an approximation of the published design tokens so you can explore component APIs while replacing tokens with the authoritative ones inside your own network.
+
+## What's inside
+
+- **Design tokens** defined in `src/design-system/tokens.ts` and mapped to CSS variables in `src/design-system/global.css`.
+- **React components** for the navigation, hero, buttons, tags, cards and notices that follow the Parliament system’s tone of voice and interaction patterns.
+- **Storybook stories** that expose controls for the key props so designers and engineers can iterate quickly.
+- A Vite powered sandbox (`npm run dev`) that demonstrates how the components work together in a realistic layout.
+
+## Next steps
+
+1. Replace the token values with the official palette and typography once you can reference the Parliament packages.
+2. Swap the placeholder crest icon in the `Navigation` component with the SVG provided by the design system.
+3. Extend the stories with your own usage patterns and accessibility notes.
+
+Need a quick start? Try the **Playground** story to tinker with the entire layout without leaving Storybook.
