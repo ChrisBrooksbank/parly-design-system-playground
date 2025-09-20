@@ -1,0 +1,23 @@
+@import './design-system/global.css';
+
+:root {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 600;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  color: var(--pds-brand-plum);
+}
+
+a:hover {
+  color: var(--pds-brand-blue);
+}
+
+main {
+  min-height: 100vh;
+  background: linear-gradient(180deg, rgba(11, 72, 132, 0.06) 0%, rgba(255, 255, 255, 0) 60%), var(--pds-neutral-100);
+}

@@ -1,0 +1,63 @@
+:root {
+  color-scheme: light;
+  font-family: 'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;
+  --pds-brand-blue: #0b4884;
+  --pds-brand-teal: #007f7b;
+  --pds-brand-plum: #5a2a83;
+  --pds-brand-gold: #fbc93d;
+  --pds-neutral-900: #1f1f1f;
+  --pds-neutral-700: #414141;
+  --pds-neutral-500: #6b6b6b;
+  --pds-neutral-200: #d7d7d7;
+  --pds-neutral-100: #f5f5f5;
+  --pds-success: #1a7f46;
+  --pds-warning: #b4690e;
+  --pds-danger: #c12c2c;
+  --pds-info: #0b73b5;
+  --pds-radius-subtle: 4px;
+  --pds-radius-pill: 999px;
+  --pds-shadow-card: 0 10px 30px rgba(0, 24, 51, 0.08);
+  --pds-shadow-focus: 0 0 0 3px rgba(11, 72, 132, 0.45);
+  --pds-transition: 150ms ease-out;
+}
+
+body {
+  margin: 0;
+  font-family: inherit;
+  background: var(--pds-neutral-100);
+  color: var(--pds-neutral-900);
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  box-shadow: var(--pds-shadow-focus);
+}
+
+*::selection {
+  background: rgba(251, 201, 61, 0.6);
+}
+
+@font-face {
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans 3'), local('SourceSans3-Regular');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Serif 4'), local('SourceSerif4-SemiBold');
+  font-display: swap;
+}

@@ -1,0 +1,82 @@
+#root {
+  margin: 0 auto;
+}
+
+.pds-shell {
+  max-width: 1100px;
+  margin: -4rem auto 6rem;
+  padding: 0 clamp(1.25rem, 4vw, 2.5rem) 6rem;
+  display: grid;
+  gap: 4rem;
+}
+
+.pds-section {
+  display: grid;
+  gap: 2rem;
+}
+
+.pds-section__header {
+  display: grid;
+  gap: 1rem;
+}
+
+.pds-section__header h2 {
+  margin: 0;
+  font-family: 'Source Serif 4', 'Georgia', serif;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  color: var(--pds-brand-blue);
+}
+
+.pds-section__header p {
+  margin: 0;
+  color: var(--pds-neutral-700);
+  max-width: 60ch;
+}
+
+.pds-token-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.pds-token-grid dl {
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.35rem 1.5rem;
+  padding: 1.5rem;
+  border-radius: 18px;
+  background: white;
+  box-shadow: var(--pds-shadow-card);
+}
+
+.pds-token-grid dt {
+  font-weight: 600;
+  color: var(--pds-neutral-700);
+}
+
+.pds-token-grid dd {
+  margin: 0;
+  font-family: 'Source Serif 4', 'Georgia', serif;
+  color: var(--pds-brand-plum);
+}
+
+.pds-card-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.pds-resource-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 720px) {
+  .pds-shell {
+    margin-top: -3rem;
+    padding-bottom: 4rem;
+  }
+}
